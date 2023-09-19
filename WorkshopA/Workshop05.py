@@ -4,12 +4,12 @@ def EmployeeDetail() :
     return EmployeeID, EmployeeName
 
 def EmployeeSalary() :
-    Salary = float(input('ใส่เงินเดือน'))
+    Salary = float(input('ใส่เงินเดือน : '))
     return Salary
 
 def calsalary(Salary, EmployeeID, EmployeeName) :
     AfterTax = Salary - (Salary * 7 /100) - 500
-    print(f'คุณรหัส{EmployeeID} คุณชื่อ{EmployeeName} เงินเดือนสุทธิเท่ากับ {calsalary}')
+    print(f'คุณรหัส{EmployeeID} คุณชื่อ{EmployeeName} เงินเดือนสุทธิเท่ากับ {AfterTax}')
 
 EmployeeID, EmployeeName = EmployeeDetail()
 Salary = EmployeeSalary()
